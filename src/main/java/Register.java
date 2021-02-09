@@ -19,7 +19,7 @@ public class Register {
 
     public Map<Level, List<Student>> getRegisterByLevel(Level level) {
 
-    List<Student> names = this.students.stream()
+        List<Student> names = this.students.stream()
             .filter(s -> s.getLevel().equals(level))
             .collect(Collectors.toList());
 
@@ -33,7 +33,7 @@ public class Register {
         var studentsByLevel = new EnumMap<Level, HashSet<Student>>(Level.class);
 
 //        re-arrange students
-    this.students.stream()
+        this.students.stream()
             .forEach(student -> {
                 var l = ((Student) student).getLevel();
                 if (!studentsByLevel.containsKey(l)) {
