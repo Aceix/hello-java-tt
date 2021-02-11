@@ -7,11 +7,11 @@ public class Lecture {
 
     Lecture() {
 
-        this.students = new HashSet<Student>();
+        this.students = new HashSet<>();
     }
 
-    public Boolean enter(Student s) {
-        return this.students.add(s);
+    public void enter(Student s) {
+        this.students.add(s);
     }
 
     public Set<Student> getStudents() {

@@ -1,4 +1,5 @@
 import java.util.List;
+import java.util.stream.DoubleStream;
 //Test push by chester
 
 public class Student implements Nameable, HasLevel {
@@ -62,5 +63,16 @@ public class Student implements Nameable, HasLevel {
 
     public void setLevel(Level level) {
         this.level = level;
+    }
+
+    public DoubleStream getGradesAsDoubleStream() {
+        return this.grades.stream().mapToDouble(Double::doubleValue);
+    }
+
+    @Override
+    public String toString() {
+        return "Student{name: " + this.name +
+                ", level: " + this.level +
+                ", grades: " + this.grades + "}";
     }
 }

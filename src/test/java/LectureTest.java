@@ -1,7 +1,6 @@
 import junit.framework.TestCase;
 
 import java.util.Arrays;
-import java.util.Vector;
 
 public class LectureTest extends TestCase {
     Lecture lecture;

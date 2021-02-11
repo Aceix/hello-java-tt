@@ -1,12 +1,1 @@
-
-===========================
-Level L100
-
-Akua
-Kwame
-
-===========================
-Level L300
-
-Sylvia
-
+€[Student{name: Akua, level: L100, grades: [50.0, 64.3, 89.9]}, Student{name: Sylvia, level: L300, grades: [19.0, 91.0, 39.0]}]

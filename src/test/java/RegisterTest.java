@@ -14,9 +14,9 @@ public class RegisterTest extends TestCase {
 
         this.register = new Register (
             Arrays.asList(
-                    new Student("Kwame", Arrays.asList(1.0, 2.0, 3.0), Level.L100),
-                    new Student("Akua", Arrays.asList(4.0, 5.0, 3.0), Level.L100),
-                    new Student("Sylvia", Arrays.asList(1.0, 9.0, 3.0), Level.L300)
+                    new Student("Kwame", Arrays.asList(60.0, 75.4, 49.2), Level.L100),
+                    new Student("Akua", Arrays.asList(50.0, 64.3, 89.9), Level.L100),
+                    new Student("Sylvia", Arrays.asList(19.0, 91.0, 39.0), Level.L300)
             )
         );
     }
@@ -62,5 +62,31 @@ public class RegisterTest extends TestCase {
 
             fail("StudentNotFoundException not thrown but student was not found");
         } catch (StudentNotFoundException ignored) {}
+    }
+
+    public void testGetHighestGrade() {
+        assertEquals(
+                91.0,
+                this.register.getHighestGrade()
+        );
+    }
+
+    public void testGetAverageGrade() {
+        assertEquals(
+                5975,
+                (int)(this.register.getAverageGrade() * 100)
+        );
+    }
+
+    public void testGetGradesAbove60() {
+        System.out.println(this.register.getGradesAbove60());
+    }
+
+    public void testGetStudentsByName() {
+        System.out.println(
+                this.register.getStudentsByName(
+                        Arrays.asList("Akua", "Sylvia")
+                )
+        );
     }
 }

@@ -1,23 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="RegisterTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-02-05T18:45:47" hostname="DESKTOP-T9RUIH0" time="0.06">
+<testsuite name="RegisterTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-02-08T22:27:46" hostname="DESKTOP-T9RUIH0" time="0.032">
   <properties/>
-  <testcase name="testGetStudentByNameShouldThrow" classname="RegisterTest" time="0.008"/>
-  <testcase name="testRegisterCtorShouldAcceptListOfNaughtyStudents" classname="RegisterTest" time="0.007"/>
-  <testcase name="testGetStudentByName" classname="RegisterTest" time="0.0"/>
-  <testcase name="testGetRegister" classname="RegisterTest" time="0.001"/>
-  <testcase name="testPrintRegister" classname="RegisterTest" time="0.042"/>
-  <system-out><![CDATA[
-===========================
-Level L100
-
-Akua
-Kwame
-
-===========================
-Level L300
-
-Sylvia
-
+  <testcase name="testGetStudentsByName" classname="RegisterTest" time="0.032"/>
+  <system-out><![CDATA[[Student{name: Akua, level: L100, grades: [50.0, 64.3, 89.9]}, Student{name: Sylvia, level: L300, grades: [19.0, 91.0, 39.0]}]
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
