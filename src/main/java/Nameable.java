@@ -1,3 +1,3 @@
 public interface Nameable {
-    public String getName();
+    String getName();
 }
