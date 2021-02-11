@@ -1,5 +1,4 @@
 import junit.framework.TestCase;
-import org.junit.Test;
 
 import java.util.Arrays;
 import java.util.List;
@@ -59,6 +58,8 @@ public class RegisterTest extends TestCase {
     public void testGetStudentByNameShouldThrow() {
         try {
             var s = this.register.getStudentByName("Kukua");
+
+            System.out.println(s);
 
             fail("StudentNotFoundException not thrown but student was not found");
         } catch (StudentNotFoundException ignored) {}
