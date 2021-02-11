@@ -1,9 +1,11 @@
 import java.util.ArrayList;
 
 public class BagOfLectures {
-    private ArrayList<Lecture> lectures;
+    private final ArrayList<Lecture> lectures;
 
-    public BagOfLectures() {}
+    public BagOfLectures() {
+        this.lectures = new ArrayList<>();
+    }
 
     public BagOfLectures(ArrayList<Lecture> lectures) {
         this.lectures = lectures;
